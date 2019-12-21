@@ -5,6 +5,11 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
+import Display from "./components/DisplayComponents/Display";
+import NumberButtons from "./components/ButtonComponents/NumberButtons/NumberButton"
+import OperatorButtons from "./components/ButtonComponents/OperatorButtons/OperatorButton"
+import SpecialButtons from "./components/ButtonComponents/SpecialButtons/SpecialButton"
+
 
 function App() {
   // STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -14,10 +19,34 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   return (
+
+    
     <div className="container">
       <Logo />
       <div className="App">
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        <Display className = "display" />
+        <SpecialButtons className = "c" />
+        <SpecialButtons className = "xminus" />
+        <SpecialButtons className = "percent" />
+
+        <NumberButtons className = "one" />
+        <NumberButtons className = "two" />
+        <NumberButtons className = "three" />
+        <NumberButtons className = "four" />
+        <NumberButtons className = "five" />
+        <NumberButtons className = "six" />
+        <NumberButtons className = "seven" />
+        <NumberButtons className = "eight" />
+        <NumberButtons className = "nine" />
+        <NumberButtons className = "zero" />
+        <NumberButtons className = "dot" />
+
+        <OperatorButtons className = "divide" /> 
+        <OperatorButtons className = "multiply" /> 
+        <OperatorButtons className = "minus" /> 
+        <OperatorButtons className = "plus" /> 
+        <OperatorButtons className = "equals" /> 
+
       </div>
     </div>
   );

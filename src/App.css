@@ -17,6 +17,34 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    align-self : center;
+    margin: 0 auto;
     padding-right: 8%;
     font-size: 5.0rem;
   }
+  .button{
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      margin: 10px 20px;
+      display:flex;
+      flex-direction: row;
+      
+     
+  }
+
+  .operatorButton{
+    background-color: #237293;
+  }
+
+  .specialButton{
+    background-color: #225D9E;
+    
+}
+.numberButton{
+    background-color: #184379;
+}
+
+.c{
+
+}
