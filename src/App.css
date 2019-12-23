@@ -26,12 +26,19 @@
       height: 100px;
       width: 100px;
       border-radius: 50px;
-      margin: 10px 20px;
-      display:flex;
+      margin: 40px;
+      display: inline-flex;
       flex-direction: row;
       
      
   }
+
+  .special-buttons{
+    display: inline-block;
+
+    
+  }
+
 
   .operatorButton{
     background-color: #237293;
@@ -45,6 +52,3 @@
     background-color: #184379;
 }
 
-.c{
-
-}

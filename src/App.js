@@ -24,9 +24,12 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
+        
         <Display className = "display" />
-        <SpecialButtons className = "c" />
-        <SpecialButtons className = "xminus" />
+        {/* <div className="special-buttons"> */}
+          <SpecialButtons className = "" />
+        {/* </div> */}
+      {/*   <SpecialButtons className = "xminus" />
         <SpecialButtons className = "percent" />
 
         <NumberButtons className = "one" />
@@ -45,7 +48,7 @@ function App() {
         <OperatorButtons className = "multiply" /> 
         <OperatorButtons className = "minus" /> 
         <OperatorButtons className = "plus" /> 
-        <OperatorButtons className = "equals" /> 
+        <OperatorButtons className = "equals" />  */}
 
       </div>
     </div>
