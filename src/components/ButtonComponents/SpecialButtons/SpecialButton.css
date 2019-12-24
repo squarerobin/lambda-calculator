@@ -1,0 +1,22 @@
+
+
+.specialButtons{
+  width: 75%;
+}
+
+.specialButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 30px 5px 10px 30px;
+    border-color: #A81D36;
+    box-shadow: 0px 2px #322c2d;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #225D9E;
+    color: white;
+    font-size: 3em;
+    justify-content: center;
+    
+  }

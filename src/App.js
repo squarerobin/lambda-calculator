@@ -6,9 +6,9 @@ import "./App.css";
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display";
-import NumberButtons from "./components/ButtonComponents/NumberButtons/NumberButton"
-import OperatorButtons from "./components/ButtonComponents/OperatorButtons/OperatorButton"
-import SpecialButtons from "./components/ButtonComponents/SpecialButtons/SpecialButton"
+import NumberButtons from "./components/ButtonComponents/NumberButtons/NumberButtons"
+import OperatorButtons from "./components/ButtonComponents/OperatorButtons/OperatorButtons"
+import SpecialButtons from "./components/ButtonComponents/SpecialButtons/SpecialButtons"
 
 
 function App() {
@@ -22,13 +22,17 @@ function App() {
 
     
     <div className="container">
-      <Logo />
+     
       <div className="App">
         
+        <Logo />
         <Display className = "display" />
-        {/* <div className="special-buttons"> */}
-          <SpecialButtons className = "" />
-        {/* </div> */}
+          
+        <SpecialButtons /> 
+        <NumberButtons />
+        <OperatorButtons />
+
+         
       {/*   <SpecialButtons className = "xminus" />
         <SpecialButtons className = "percent" />
 

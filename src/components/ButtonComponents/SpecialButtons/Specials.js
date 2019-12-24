@@ -18,15 +18,13 @@ const Specials = () => {
        it any props needed by the child component*/}
        
        {
-         data.specials.map(button => {
+         specials.map(() => {
 
-          return <SpecialButton className= "" />;
-
-
+         return <SpecialButtons />;
 
          })
          
-        }
+      }
 
 
          

@@ -1,6 +1,8 @@
 import React from "react";
 import Numbers from "./NumberButton"
 import {numbers} from "../../../data"
+import NumberButton from "./NumberButton";
+import NumberButtons from "./NumberButtons";
 
 
 //import any components needed
@@ -23,10 +25,14 @@ const Numbers = () => {
        component matching the name on the provided file. Pass
       it any props needed by the child component*/}
        
-       
-{/*     <button className= "button numberButton">{numbers.map(number => data.number)}</button> 
- */}           
-      
+      {
+     
+        operators.map(() => {
+
+          return <NumberButtons />;
+
+        })
+      }
       
     
       
