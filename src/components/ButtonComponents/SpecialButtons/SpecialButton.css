@@ -9,8 +9,8 @@
     width: 100px;
     border-radius: 50px;
     margin: 30px 5px 10px 30px;
-    border-color: #A81D36;
-    box-shadow: 0px 2px #322c2d;
+    border-color: transparent;
+    box-shadow: 0px 5px #322c2d;
     display: inline-flex;
     justify-content: center;
     flex-direction: column;

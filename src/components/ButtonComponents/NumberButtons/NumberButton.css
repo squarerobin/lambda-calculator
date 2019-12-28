@@ -15,8 +15,8 @@
     height: 100px;
     width: 100px;
     border-radius: 50px;
-    border-color: #A81D36;
-    box-shadow: 0px 2px #322c2d;
+    border-color: transparent;
+    box-shadow: 0px 5px #322c2d;
     margin: 10px 10px 10px 25px;
     display: flex;
     justify-content: center;
