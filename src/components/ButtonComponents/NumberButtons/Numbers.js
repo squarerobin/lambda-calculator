@@ -1,8 +1,9 @@
-import React from "react";
-import Numbers from "./NumberButton"
+import React, {useState} from "react"
+
 import {numbers} from "../../../data"
-import NumberButton from "./NumberButton";
-import NumberButtons from "./NumberButtons";
+import NumberButton from "./NumberButton"
+import "../NumberButtons/NumberButton.css"
+
 
 
 //import any components needed
@@ -20,16 +21,17 @@ const Numbers = () => {
 
 
   return (
-    <div>
+    <div className={'numberButtons'}>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
       it any props needed by the child component*/}
        
       {
      
-        operators.map(() => {
+        numbers.map(number => {
+          
 
-          return <NumberButtons />;
+          return number === '0' ? <NumberButton styles={'numberButton zero'} numberOnButton={number} /> : <NumberButton styles={'numberButton'} numberOnButton={number} />;
 
         })
       }
@@ -43,3 +45,5 @@ const Numbers = () => {
     </div>
   );
 };
+
+export default Numbers
