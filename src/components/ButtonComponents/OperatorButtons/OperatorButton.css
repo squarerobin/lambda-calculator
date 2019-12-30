@@ -2,7 +2,7 @@
 .operatorButtons{
   
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
   align-self: flex-end;
 

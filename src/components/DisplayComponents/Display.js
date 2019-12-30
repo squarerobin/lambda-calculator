@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 
-const Display = (props) => {
+const Display = () => {
 
     const[output, setOutput] = useState('0')
 
