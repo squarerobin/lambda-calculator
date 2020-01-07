@@ -2,12 +2,18 @@
 .operatorButtons{
   
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   flex-direction: column;
-  align-self: flex-end;
+  position: relative;
+  top: -295px;
+  
+
+
+/*   margin-top: -2px;
+
 
   position: absolute;
-  top: 246px;
+  top: 246px;  */
    
 }
 .operatorButton{

@@ -11,7 +11,7 @@ import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
 
 import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton"
-import OperatorButtons from "./components/ButtonComponents/OperatorButtons/OperatorButtons"
+import OperatorButtons from "./components/ButtonComponents/OperatorButtons/OperatorButton"
 import SpecialButtons from "./components/ButtonComponents/SpecialButtons/SpecialButton"
 
 
@@ -36,7 +36,7 @@ function App() {
           
         <Specials /> 
         <Numbers/>
-        <OperatorButtons />
+        <Operators />
 
          
       </div>
