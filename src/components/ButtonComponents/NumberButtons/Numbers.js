@@ -27,6 +27,8 @@ const Numbers = () => {
       it any props needed by the child component*/}
        
       {
+      
+        
      
         numbers.map(number => {
           

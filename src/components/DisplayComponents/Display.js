@@ -4,9 +4,9 @@ import React, { useState } from "react";
 
 const Display = () => {
 
-    const[output, setOutput] = useState('0')
+    const[displayState, setDisplayState] = useState('0')
 
-    return <div className="display">{output}</div>;
+    return <div className="display">{displayState}</div>;
 }
 
 export default Display;

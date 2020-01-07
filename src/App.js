@@ -7,9 +7,12 @@ import "./App.css";
 import Logo from "./components/DisplayComponents/Logo";
 import Display from "./components/DisplayComponents/Display";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
+import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
+
 import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton"
 import OperatorButtons from "./components/ButtonComponents/OperatorButtons/OperatorButtons"
-import SpecialButtons from "./components/ButtonComponents/SpecialButtons/SpecialButtons"
+import SpecialButtons from "./components/ButtonComponents/SpecialButtons/SpecialButton"
 
 
 function App() {
@@ -19,6 +22,8 @@ function App() {
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
+
+
   return (
 
     
@@ -27,34 +32,13 @@ function App() {
       <div className="App">
         
         <Logo />
-        <Display output={0} />
+        <Display />
           
-        <SpecialButtons /> 
+        <Specials /> 
         <Numbers/>
         <OperatorButtons />
 
          
-      {/*   <SpecialButtons className = "xminus" />
-        <SpecialButtons className = "percent" />
-
-        <NumberButtons className = "one" />
-        <NumberButtons className = "two" />
-        <NumberButtons className = "three" />
-        <NumberButtons className = "four" />
-        <NumberButtons className = "five" />
-        <NumberButtons className = "six" />
-        <NumberButtons className = "seven" />
-        <NumberButtons className = "eight" />
-        <NumberButtons className = "nine" />
-        <NumberButtons className = "zero" />
-        <NumberButtons className = "dot" />
-
-        <OperatorButtons className = "divide" /> 
-        <OperatorButtons className = "multiply" /> 
-        <OperatorButtons className = "minus" /> 
-        <OperatorButtons className = "plus" /> 
-        <OperatorButtons className = "equals" />  */}
-
       </div>
     </div>
   );
