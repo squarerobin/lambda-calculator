@@ -4,10 +4,14 @@ import "./SpecialButton.css";
 
 
 const SpecialButton = (props) => {
+
+  const {styles} = props
+  const {symbolOnButton} = props
+
  
   return (
     <div className="specialButtons">
-      <button className={props.styles}>{props.symbolOnButton}</button>
+      <button className={styles}>{symbolOnButton}</button>
       
     </div>
   );

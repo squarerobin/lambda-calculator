@@ -7,7 +7,8 @@ import Display from "../../DisplayComponents/Display"
 /* const clickHandler = () => Display.setOutput('hello') */
 
 const NumberButton = (props) => {
-  const numberOnButton = props.numberOnButton
+  const {styles} = props
+  const {numberOnButton} = props
   
   return (
     
