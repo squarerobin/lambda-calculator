@@ -41,7 +41,7 @@ const update = () =>{
       <div className="App">
         
         <Logo />
-        <Display></Display> 
+        <Display />
           
         <Specials /> 
         <Numbers onClick={update} />
