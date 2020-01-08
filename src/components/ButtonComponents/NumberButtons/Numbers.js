@@ -4,6 +4,8 @@ import {numbers} from "../../../data"
 import NumberButton from "./NumberButton"
 import "../NumberButtons/NumberButton.css"
 
+import Display from "../../DisplayComponents/Display"
+
 
 
 //import any components needed
@@ -14,11 +16,11 @@ import { numbers } from '../../../data'
 //Import your array data too from the provided data file
 
 
-const Numbers = () => {
+const Numbers = (props) => {
   // STEP 2 - add the imported data to state
   const [numberState, setNumberState] = useState(numbers);
 
-
+  
 
   return (
     <div className={'numberButtons'}>
@@ -30,10 +32,10 @@ const Numbers = () => {
       
         
      
-        numbers.map(number => {
+        numbers.map((number,index) => {
           
 
-          return number === '0' ? <NumberButton styles={'numberButton zero'} numberOnButton={number} /> : <NumberButton styles={'numberButton'} numberOnButton={number} />;
+          return number === '0' ? <NumberButton key={index} styles={'numberButton zero'} symbolOnButton={number} /> : <NumberButton key={index} styles={'numberButton'} symbolOnButton={number} />;
 
         })
       }

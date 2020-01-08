@@ -20,10 +20,10 @@ const Specials = () => {
        it any props needed by the child component*/}
        
        {
-        specials.map(special => {
+        specials.map((special,index) => {
           
 
-          return <SpecialButton styles={'specialButton'} symbolOnButton={special} />;
+          return <SpecialButton key={index} styles={'specialButton'} symbolOnButton={special} />;
 
         })
          
