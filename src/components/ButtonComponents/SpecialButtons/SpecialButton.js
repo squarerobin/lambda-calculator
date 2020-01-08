@@ -1,9 +1,20 @@
 import React from "react";
+import {specials} from "../../../data"
+import "./SpecialButton.css";
 
-const SpecialButton = () => {
+
+const SpecialButton = (props) => {
+
+  const {styles} = props
+  const {symbolOnButton} = props
+
+ 
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <div className="specialButtons">
+      <button className={styles}>{symbolOnButton}</button>
+      
+    </div>
   );
 };
+
+export default SpecialButton;

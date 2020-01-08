@@ -1,0 +1,34 @@
+
+.operatorButtons{
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  top: -295px;
+ 
+  
+
+
+/*   margin-top: -2px;
+
+
+  position: absolute;
+  top: 246px;  */
+   
+}
+.operatorButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border-color: transparent;
+    box-shadow: 0px 5px #322c2d;
+    margin: 0px 5px 20px 430px;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    flex-direction: column;
+    background-color: #237293;
+    
+  }

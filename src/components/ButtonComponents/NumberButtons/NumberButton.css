@@ -1,0 +1,36 @@
+
+.numberButtons{
+  
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 1px;
+    margin-right: 2px;
+    
+ 
+}
+
+.numberButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border-color: transparent;
+    box-shadow: 0px 5px #322c2d;
+    margin: 10px 10px 10px 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+    flex-direction: column;
+    background-color: #184379;
+    z-index: 1;
+   
+}
+
+.zero{
+
+    
+    display: flex;
+    width: 240px;
+}

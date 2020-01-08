@@ -1,0 +1,26 @@
+
+
+.specialButtons{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.specialButton{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 30px 5px 10px 30px;
+    border-color: transparent;
+    box-shadow: 0px 5px #322c2d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #225D9E;
+    color: white;
+    font-size: 3em;
+    justify-content: center;
+    
+  }
