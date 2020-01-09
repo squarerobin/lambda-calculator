@@ -9,7 +9,7 @@ import Display from "./components/DisplayComponents/Display";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers"
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials"
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators"
-
+import {numbers} from "./data"
 
 
 function App(props) {
@@ -21,15 +21,32 @@ function App(props) {
 
 
   const [total, setTotal] = useState(0)
+  const [display, setDisplay] = useState(0)
+  
+  const {numberState, setNumberState} = useState()
+  let [currentClass, setCurrentClass] = useState();
 
-  const {symbolOnButton} = props
-  const {DisplayState, setDisplayState} = props
 
-const update = () =>{
-  Display.setDisplayState({symbolOnButton})
-}
  
+  const update = () => {
+    
+    console.log('hello')
+
+    let textC = document.querySelector(currentClass).innerText
+
+    console.log(textC)
+    //setDisplay(text1)
+    
+    
+  }
  
+
+
+
+
+
+
+
 
 
 
@@ -41,10 +58,10 @@ const update = () =>{
       <div className="App">
         
         <Logo />
-        <Display />
+        <Display display={display} />
           
         <Specials /> 
-        <Numbers onClick={update} />
+        <Numbers update={update} className={currentClass} />
         <Operators />
 
          
